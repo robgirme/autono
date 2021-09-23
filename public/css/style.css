@@ -1,0 +1,471 @@
+/*define root variables*/
+:root{
+  --main-color: #0728AB;
+  --secondary-color: #04012E;
+  --accent-color: #FFD991;
+  --lato: 'Lato', sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
+}
+/*defining fonts*/
+/*lato*/
+/*@font-face {
+  font-family: latoBold;
+  src: url(/fonts/lato/Lato-Bold.ttf);
+}@font-face {
+  font-family: latoLight;
+  src: url(/fonts/lato/Lato-Light.ttf);
+}@font-face {
+  font-family: lato;
+  src: url(/fonts/lato/Lato-Regular.ttf);
+}*/
+
+/*montserrat*/
+/*@font-face {
+  font-family: montserrat;
+  src: url(inc/fonts/Montserrat/Montserrat-Regular.ttf);
+}@font-face {
+  font-family: montserratBold;
+  src: url(inc/fonts/Montserrat/Montserrat-Bold.ttf);
+}@font-face {
+  font-family: montserratLight;
+  src: url(inc/fonts/Montserrat/Montserrat-Light.ttf);
+}*/
+
+body {
+  /*padding: 50px;*/
+  font-family: sans-serif;
+  /*font-family: var(--lato);*/
+  font-family: var(--montserrat);
+  font-size: 1.2rem;
+  /*font-weight:  700;*/
+  /*background-color: #04012E;*/
+}
+.imgR{
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+/**{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}*/
+
+h1{
+  font-size: 4.5rem;
+  /*color: #FFD991;*/
+  /*color: #FFD991;*/
+  text-align: center;
+}
+.rental h2{
+  text-align: center;
+}
+/*making the footer stick to the bottom*/
+main{
+   min-height: calc(103vh - 180px);
+}
+.navLink{
+  font-size: 1.25rem;
+}
+.logo{
+  font-size: 1.4rem;
+}
+/*nav and footer styling*/
+.navbar, .footer{
+  background-color: var(--secondary-color);
+  color: white;
+}
+.footer{
+  text-align: center;
+}
+.fa-facebook ,.fa-twitter ,.fa-instagram, .footerItem{
+  color: white;
+}
+.carimg{
+  width: 100%;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+.carInfoWrapper{
+  padding: 10px;
+}
+/*Profile Picture*/
+.profPic{
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-color: #4d71ff;
+  border-width: 3px;
+  border-radius: 50%;
+  border-style: solid;
+  background-position: center;
+}
+/*---------------*/
+.carCard{
+  min-height: 250px;
+  max-height: 16rem;
+  font-size: 1rem;
+  max-width: 15rem;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0px 3px 2px rgb(0 0 0 / 20%);
+}
+
+.main-profile-img{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #FFFFFF;
+  margin-bottom: 150px;
+}
+/*making header and footer full width*/
+/*body > .container-fluid, footer > .container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}*/
+/*Home page margins*/
+.homeHero{
+  margin-bottom: 40px;
+}
+/*-----------------*/
+/*sigin in alignment*/
+.signinContainer{
+
+ /* width: 350px;*/
+  border-radius: 15px;
+  color: white;
+}
+.loginField{
+  width: 85%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+/*----------*/
+/*sign in and login form buttons*/
+.signinUpBtn{
+  width: 200px;
+}
+
+.homeTitle{
+  color: #0728AB;
+}
+.whatWeDoSubHead{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.whatWeDoTxt{
+  margin-bottom: 100px;
+}
+.whatWeDo p{
+  font-size: 1rem;
+  text-align:  center;
+}
+.whatWeDo{
+  margin-bottom:  45px;
+}
+.rentalBox{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.rentalBox p{
+  color: #000000;
+}
+.rentalBox ul{
+  padding: 0;
+  list-style-type: none;
+}
+.testimonial h3{
+  color: #000000;
+}
+
+.testimonial h5{
+  font-size:  0.9rem;
+}
+.testimonial p{
+  font-size:  1rem;
+}
+
+li a{
+  font-size: 0.9rem;
+  text-align: center;
+}
+ul{
+  list-style: none;
+  text-align: center;
+}
+/*footer at the bottom of page*/
+.footer{
+  /*position: absolute;
+  margin-top: auto;*/
+  /*background-color: var(--secondary-color);*/
+  
+}
+.footerLinks{
+  list-style-type: none;
+}
+.footerItem{
+  font-size: 1rem;
+}
+.formSignin, .formSignup{
+  
+  max-width: 500px;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 15%;
+  text-align: center;
+  background-color: rgba(16, 16, 115, .40);
+  backdrop-filter: blur(15px);
+}
+/*.formSignin:before, .formSignup:before{
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    background: inherit;
+
+  }*/
+
+/*error flags*/
+.errorFlag{
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+  margin: auto;
+  text-align: center;
+  z-index: 2;
+}
+.signup{
+  background-image: url('/img/blueTesla.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.login{
+  background-image: url('/img/blueTesla2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+/*dividers*/
+.divider{
+  margin: 50px 0 50px 0;
+}
+/*--------*/
+/*rental map*/
+.mapContainer{
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+  border-radius: 35px;
+  border: 2px solid;
+  height: 800px;
+  /*border-image: linear-gradient(#000, #000) 3;
+     box-shadow: inset 1px 7px 4px 4px #000000; 
+  border-image-width: 5px;*/
+}
+.mapArea{
+  overflow: hidden;
+  height: 795px;
+  border-radius: 35px;
+}
+.mapContainer img {
+  border-radius: 35px;
+  /*width: calc(100% + 40px);
+  margin-left: calc(-20px);
+  margin-right: calc(-20px);*/
+  /*position: absolute;
+  left: -10%;
+  transform: translateX(10%);*/
+}
+/*.mapContainer img{
+  transform: translateY(-10%);
+  transform: translateX(-10%);
+  margin-top: -10px;
+}*/
+/*----------*/
+/*rental form*/
+.carList{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.rentalForm{
+  height: 100%;
+  padding: 15px;
+  /*color: white;*/
+  /*background-color: var(--secondary-color);*/
+  border-style: solid;
+  border-width: 2px;
+  border-color: #0728ab36;
+  max-width: 900px;
+  border-radius: 15px;
+}
+.rentalFormTitle{
+  margin-bottom: 25px
+}
+.contactField, .editField{
+  margin-bottom: 25px;
+}
+.rentalField{
+  margin-bottom: 40px;
+}
+/*-----------*/
+/*.testimonyQuote{
+  font-size: 1rem;
+}*/
+/*thank you page*/
+.thanksBox{
+  line-height: 4rem;
+  max-width: 500px;
+  vertical-align: middle;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(25%);
+  text-align: center;
+  padding: 15px;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #9bc3ff;
+}
+.thanksBox > p{
+  font-size: 1.3rem;
+}
+/*--------------*/
+
+/*contact page*/
+.contactArea{
+  padding: 15px;
+  color: white;
+  /*background-color: whitesmoke;*/
+  border-radius: 15px;
+  color: black;
+}
+/*aligning contact us text center*/
+.contact h1{
+  text-align: center;
+  font-size: 4rem;
+}
+/*aligning send us message center*/
+.contact p{
+  text-align: center;
+  font-size: 1.75rem;
+}
+/*changing color for submit btn*/
+.contact .btn-primary{
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+/*change label text size*/
+.contact label{
+  font-size: 0.9rem;
+}
+.contactInfoCard{
+  padding: 15px;
+  color: black;
+  /*background-color: whitesmoke;*/
+  margin-left: 15px;
+  border-radius: 15px;
+  font-size: medium;
+  line-height: 2rem;
+}
+.contactInfoCard h3{
+
+}
+.availableCars{
+    margin-top: 0px;
+  }
+/*Profile Info Margins*/
+.profileInfo{
+  margin: 30px 0 100px 0;
+}
+.profileInfo p{
+  font-size: 1.3rem;
+  width: 75%;
+  word-wrap: break-word;
+}
+/*--------------------*/
+
+/*Settings page*/
+.settingsLinks{
+  margin-top: 5rem;
+}
+.settingsTxt{
+  font-size: 1.5rem;
+  width: 300px;
+  padding: 0 20px 0 20px;
+  margin-bottom: 20px;
+}
+/*-------------*/
+/*Profile Settings*/
+.editBtn{
+  padding: 10px;
+}
+.profEdit{
+  width: 100px;
+  position: relative;
+  vertical-align: bottom;
+}
+.settingsSubHead{
+  margin-bottom: 30px;
+}
+/*----------------*/
+
+/*Logo*/
+#logo{
+  width: 150px;
+  height: auto;
+}
+#logoBox{
+  position: relative;
+  left: -5%;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 6px 5px #000000;
+}
+/*----*;/
+
+/*------------*/
+/*Responsive*/
+@media (max-width: 975px){
+  .settingsHead{
+    margin-top: 35px;
+  }
+}
+@media (max-width: 575px){
+  #logoBox{
+  left: 0%;
+}
+}
+@media(max-width: 751px){
+  .availableCars{
+    margin-top: 25px;
+  }
+}
+/*@media all and (min-width: 768px){
+  p{
+    font-size: 1.5rem;
+  }
+  .formSignin, .formSignup{
+    width: 50%;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--secondary-color);
+  }
+}*/
+/* rental page */
+.map{
+  width: 100%;
+}
+

@@ -1,0 +1,42 @@
+<main class="{{pageMainClass}}">
+	<h1 class="contactTitle">{{title}}</h1>
+	<p class="lead text-muted">{{msg}}</p>
+	<section class="py-5 {{!-- text-center --}} container">
+	    <div class="row py-lg-5">
+	      <div class="col-lg-6 col-md-8 mx-auto contactArea">
+	      	<form class="contactForm" action="/submit/contact" method='POST'>
+	      		<label for="name">Full Name</label>
+	      		<input type="text" id="name" name="name" class="form-control contactField" required>
+	      		<label for="email">Email</label>
+	      		<input type="email" id="email" name="email" class="form-control contactField" required>
+	      		<label for="phone">Phone Number</label>
+	      		<input type="tel" id="phone" name="phone" class="form-control contactField" required>
+	      		<label for="subjects">Reason for Contact</label>
+	      		<select id="subject" name="subject" class="form-select contactField" required>
+	      			<option value=""></option>
+	      			{{#each subjects}}
+	      				<option value="{{this}}">{{this}}</option>
+	      			{{/each}}
+	      		</select>
+	      		<label for="msg">Message</label>
+	      		<textarea id="msg" name="msg" class="form-control contactField" required></textarea>
+	      		<input type="submit" class="btn btn-primary" value="Submit">
+	      	</form>
+	      </div>
+	      <div class="col-lg-6 col-md-8 mx-auto contactInfo">
+	      	<figure class="contactInfoCard">
+	      		<h2>Autono</h2>
+	      		<figcaption>
+		      		<label>Address: </br><i>123 N. East St. Santa Monica, California</i></label></br>
+		      		<label>Phone: </br><i>(800)824-2265</i></label></br>
+		      		<label>Email: </br><i>contact@autono.com</i></label>
+	      		</figcaption>
+	      	</figure>
+	      </div>
+	    </div>
+  	</section>
+  	<section class="container whatWeDo"></section>
+  	<section class="container rentalBox"></section>
+  	<section class="container testimony"></section>
+  	<section class="container about"></section>
+</main>
